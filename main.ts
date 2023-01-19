@@ -72,7 +72,7 @@ let ball8 = 0
 let _10 = 0
 _10 = 10
 basic.forever(function () {
-    if (input.rotation(Rotation.Pitch) >= 180) {
+    if (input.lightLevel() <= 20) {
         basic.clearScreen()
     }
 })
