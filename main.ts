@@ -8,7 +8,8 @@ input.onButtonPressed(Button.A, function () {
         `)
 })
 input.onButtonPressed(Button.AB, function () {
-    while (true) {
+    _true = 1
+    while (_true == 1) {
         basic.showLeds(`
             . . . . .
             . . . . .
@@ -69,10 +70,12 @@ input.onGesture(Gesture.Shake, function () {
     }
 })
 let ball8 = 0
+let _true = 0
 let _10 = 0
 _10 = 10
 basic.forever(function () {
     if (input.lightLevel() <= 20) {
         basic.clearScreen()
+        _true = 0
     }
 })
