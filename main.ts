@@ -78,19 +78,16 @@ basic.showString("M", 5)
         basic.showString("M")
     }
 })
+input.onGesture(Gesture.LogoDown, function () {
+    basic.showLeds(`
+        . # # # .
+        # . . . #
+        . . . . .
+        . # . # .
+        . . . . .
+        `)
+})
 let ball8 = 0
 let _true = 0
 let _10 = 0
 _10 = 10
-basic.forever(function () {
-    while (input.logoIsPressed()) {
-        basic.showLeds(`
-            # # # # #
-            # # # # #
-            # # # # #
-            # # # # #
-            # # # # #
-            `)
-    }
-    basic.clearScreen()
-})
