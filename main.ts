@@ -103,4 +103,5 @@ input.onGesture(Gesture.LogoDown, function () {
 let ball8 = 0
 let _true = 0
 let _10 = 0
+input.setSoundThreshold(SoundThreshold.Loud, 255)
 _10 = 10
