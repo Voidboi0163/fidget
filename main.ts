@@ -60,6 +60,11 @@ input.onButtonPressed(Button.B, function () {
     music.playMelody("D G A B C5 B C5 C5 ", 120)
 })
 input.onGesture(Gesture.Shake, function () {
+    for (let index = 0; index < 10; index++) {
+        basic.showString("Yes", 5)
+basic.showString("No", 5)
+basic.showString("Maybe", 5)
+    }
     ball8 = randint(1, 3)
     if (ball8 == 1) {
         basic.showString("Yes")
@@ -78,4 +83,16 @@ basic.forever(function () {
         basic.clearScreen()
         _true = 0
     }
+})
+basic.forever(function () {
+    while (input.logoIsPressed()) {
+        basic.showLeds(`
+            # # # # #
+            # # # # #
+            # # # # #
+            # # # # #
+            # # # # #
+            `)
+    }
+    basic.clearScreen()
 })
