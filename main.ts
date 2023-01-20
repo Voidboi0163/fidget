@@ -7,6 +7,10 @@ input.onButtonPressed(Button.A, function () {
         . # # # .
         `)
 })
+input.onGesture(Gesture.ScreenDown, function () {
+    basic.clearScreen()
+    _true = 0
+})
 input.onButtonPressed(Button.AB, function () {
     _true = 1
     while (_true == 1) {
@@ -61,29 +65,23 @@ input.onButtonPressed(Button.B, function () {
 })
 input.onGesture(Gesture.Shake, function () {
     for (let index = 0; index < 10; index++) {
-        basic.showString("Yes", 5)
-basic.showString("No", 5)
-basic.showString("Maybe", 5)
+        basic.showString("Y", 5)
+basic.showString("N", 5)
+basic.showString("M", 5)
     }
     ball8 = randint(1, 3)
     if (ball8 == 1) {
-        basic.showString("Yes")
+        basic.showString("Y")
     } else if (ball8 == 2) {
-        basic.showString("No")
+        basic.showString("N")
     } else {
-        basic.showString("Maybe")
+        basic.showString("M")
     }
 })
 let ball8 = 0
 let _true = 0
 let _10 = 0
 _10 = 10
-basic.forever(function () {
-    if (input.lightLevel() <= 20) {
-        basic.clearScreen()
-        _true = 0
-    }
-})
 basic.forever(function () {
     while (input.logoIsPressed()) {
         basic.showLeds(`
