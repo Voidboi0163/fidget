@@ -1,5 +1,18 @@
 input.onButtonPressed(Button.A, function () {
     basic.showLeds(`
+        . # . . .
+        # . # . .
+        . . # . .
+        . . # # .
+        . . # # .
+        `)
+    music.playMelody("C - C C C D C D ", 120)
+    music.playMelody("E - E E E F E F ", 120)
+    music.playMelody("G - G G C5 - G - ", 120)
+    music.playMelody("E - D - D - C - ", 120)
+})
+input.onGesture(Gesture.LogoUp, function () {
+    basic.showLeds(`
         . . . . .
         . # . # .
         . . . . .
