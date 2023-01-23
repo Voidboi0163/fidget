@@ -24,21 +24,6 @@ input.onGesture(Gesture.ScreenDown, function () {
     basic.clearScreen()
     _true = 0
 })
-input.onSound(DetectedSound.Loud, function () {
-    for (let index = 0; index < 10; index++) {
-        basic.showString("Y", 5)
-basic.showString("N", 5)
-basic.showString("M", 5)
-    }
-    ball8 = randint(1, 3)
-    if (ball8 == 1) {
-        basic.showString("Y")
-    } else if (ball8 == 2) {
-        basic.showString("N")
-    } else {
-        basic.showString("M")
-    }
-})
 input.onButtonPressed(Button.AB, function () {
     _true = 1
     while (_true == 1) {
