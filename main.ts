@@ -1,4 +1,5 @@
 input.onButtonPressed(Button.A, function () {
+    _true = 0
     basic.showLeds(`
         . # . . .
         # . # . .
@@ -64,6 +65,7 @@ input.onButtonPressed(Button.AB, function () {
     }
 })
 input.onButtonPressed(Button.B, function () {
+    _true = 0
     basic.showLeds(`
         . # . . .
         # . # . .
@@ -82,6 +84,7 @@ input.onGesture(Gesture.Shake, function () {
 basic.showString("N", 5)
 basic.showString("M", 5)
     }
+    _true = 0
     ball8 = randint(1, 3)
     if (ball8 == 1) {
         basic.showString("Y")
