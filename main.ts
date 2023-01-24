@@ -13,6 +13,7 @@ input.onButtonPressed(Button.A, function () {
     music.playMelody("E - D - D - C - ", 120)
 })
 input.onGesture(Gesture.LogoUp, function () {
+    _true = 0
     basic.showLeds(`
         . . . . .
         . # . # .
@@ -95,6 +96,7 @@ basic.showString("M", 5)
     }
 })
 input.onGesture(Gesture.LogoDown, function () {
+    _true = 0
     basic.showLeds(`
         . # # # .
         # . . . #
